@@ -102,7 +102,7 @@ header nav {
 
   .grid-container-about-me {
     
-    max-width: 95%; /*--Center grid to page--*/
+    max-width: 80%; /*--Center grid to page--*/
     margin: 30px; /*--Center grid to page--*/ 
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -122,12 +122,21 @@ header nav {
 
   .grid-item {
     padding-right: 0.5em;
+    opacity: 0.8;
   }
     .grid-work {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     border: 3px solid #9ccacd;
+    }
+
+    .grid-item:hover {
+      opacity: 1 ;
+      transition: 0.5s;
+      cursor: pointer;
+      
+      
     }
 
   .box1 {
@@ -158,6 +167,21 @@ header nav {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
+    background-image: url("../images/run-buddy.JPG");    
+    background-size: cover;
+    opacity: 0.9;
+   }
+
+  .box5 {
+    background-image: url("../images/led-wall.jpg");
+    background-size: cover;
+    background-position: center;
+  } 
+
+  .box6 {
+    background-image:url("../images/calculator.jpg");
+    background-size: cover;
+    background-position: top;
   }
 
   .box7{
@@ -165,6 +189,9 @@ header nav {
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
+    background-image: url("../images/pastel.jpg");
+    background-size: cover;
+    background-position: top;
   }
 
   .box8{
@@ -172,6 +199,9 @@ header nav {
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
+    background-image: url("../images/surf-report.jpg");
+    background-size: cover;
+    background-position: center;
   }
 
 
@@ -184,19 +214,48 @@ header nav {
     
   }
 
+  .grid-item h3, p {
+    background-color: #9ccacd;
+    padding: 0px 5px 0 5px;
+          
+  }
+
+  .grid-item h3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 30px;
+    
+  }
+
+  .grid-item p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 10px;
+    font-weight: bold;
+    height: 20px;
+    margin-bottom: 10px;
+  }
+
+  .grid-item a {
+    text-decoration: none;
+    color: #3e506d;
+  }
+
   /*------END CSS GRID------*/
 
   /*------------------------*/
   /*-----FOOTER-------------*/
 
-  /*
-  .footer-nav{
+  
+  footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  */
+  
 
   /*-----END FOOTER---------*/
 
