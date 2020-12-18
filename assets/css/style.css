@@ -81,7 +81,7 @@ header nav {
     height: 300px;
     background-image: url('../images/hero-bg.jpg');
     background-size: cover;
-    background-position: bottom;    
+    background-position: bottom;        
   }
 
   .hero-cta{
@@ -95,14 +95,20 @@ header nav {
   }
   
   /*------------------------*/
-  /*------CSS GRID----------*/
+  /*------CSS GRID WRAPPER----------*/
   .grid-wrapper {
     display: grid;
     }
 
+  /*-----END GRID WRAPPER----------*/
+
+
+   /*------------------------*/
+  /*------CSS GRID CONTAINER----------*/
+
   .grid-container-about-me {
     
-    max-width: 80%; /*--Center grid to page--*/
+    max-width: 90%; /*--Center grid to page--*/
     margin: 30px; /*--Center grid to page--*/ 
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -112,31 +118,96 @@ header nav {
 
   .grid-container-work {
 
-    max-width: 95%; /*--Center grid to page--*/
+    max-width: 90%; /*--Center grid to page--*/
     margin: 30px; /*--Center grid to page--*/ 
     display: grid;
     grid-template-columns: 200px repeat(3, 1fr);
-    grid-template-rows: repeat(3, minmax(100px, auto));
+    grid-template-rows: minmax(100px, auto);
     gap: 5px;
   }
 
+  .grid-container-contact-me {
+    max-width: 90%; /*--Center grid to page--*/
+    margin: 30px; /*--Center grid to page--*/ 
+    display: grid;
+    grid-template-columns: 200px repeat(6, 1fr);
+    grid-template-rows: 200px;
+    gap: 5px;
+  }
+/*-----END GRID CONTAINER----------*/
+
+/*------------------------*/
+  /*------CSS GRID ITEM----------*/
   .grid-item {
     padding-right: 0.5em;
-    opacity: 0.8;
+    /*opacity: 0.8;*/
   }
     .grid-work {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     border: 3px solid #9ccacd;
+    flex-wrap: wrap;
     }
 
-    .grid-item:hover {
+    .grid-contact-me {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .grid-head {
+      display: flex;
+      justify-content: flex-end;
+      align-items: start;
+      font-size: 20px;  
+      text-align: right;
+      
+    }
+  
+    .grid-item h3, p {
+      background-color: #9ccacd;
+      padding: 0px 5px 0 5px;
+            
+    }
+  
+    .grid-item h3 {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      height: 30px;
+      
+    }
+  
+    .grid-item p {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 10px;
+      font-weight: bold;
+      height: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .grid-item a {
+      text-decoration: none;
+      color: #3e506d;
+      
+    }
+  
+    .grid-contact-me a{
+      color: #3e506d;
+      font-size: 1.5vh;
+      text-decoration: none;
+      border-bottom: 2px solid #3e506d;
+      margin-left: 10px;
+    }
+
+    .box4, .box5, .box6, .box7,.box8:hover {
       opacity: 1 ;
       transition: 0.5s;
       cursor: pointer;
-      
-      
+            
     }
 
   .box1 {
@@ -176,6 +247,7 @@ header nav {
     background-image: url("../images/led-wall.jpg");
     background-size: cover;
     background-position: center;
+    ;
   } 
 
   .box6 {
@@ -194,7 +266,7 @@ header nav {
     background-position: top;
   }
 
-  .box8{
+  .box8 {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 3;
@@ -204,56 +276,59 @@ header nav {
     background-position: center;
   }
 
-
-  .grid-head {
-    display: flex;
-    justify-content: flex-end;
-    align-items: start;
-    font-size: 20px;  
-    text-align: right;
-    
+  .box9 {
+ 
+    border-right: 3px solid #3e506d;
   }
 
-  .grid-item h3, p {
-    background-color: #9ccacd;
-    padding: 0px 5px 0 5px;
-          
+
+  .box11 {
+    grid-column-start: 3;
+    grid-column-end: 5;
   }
 
-  .grid-item h3 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    height: 30px;
-    
-  }
 
-  .grid-item p {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 10px;
-    font-weight: bold;
-    height: 20px;
-    margin-bottom: 10px;
-  }
 
-  .grid-item a {
-    text-decoration: none;
-    color: #3e506d;
-  }
-
-  /*------END CSS GRID------*/
+  /*------END CSS GRID WORK ITEM------*/
 
   /*------------------------*/
   /*-----FOOTER-------------*/
 
   
-  footer {
+
+  /*
+  .footer-cta {
+    padding-right: 10px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-start; 
+    flex-wrap: wrap;   
+    border-right: 3px solid #3e506d; 
+    width: 229px;  
+    text-align: right;
+    margin-bottom: 25px;
   }
+
+  .footer-nav a {
+    color: #3e506d;
+    text-decoration: none;
+    border-bottom: 2px solid #3e506d;
+    font-size: 1.5vh;
+    font-weight: bold;
+    
+  }
+
+
+  .footer {
+    color: #9ccacd;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    
+  }
+  */
 
   
 
