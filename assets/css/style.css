@@ -87,6 +87,7 @@ header nav {
   .hero-cta{
     display: flex;
     justify-content:center;
+    flex-wrap: wrap;
     color: #2e3542;
     background-color: #9ccacd;
     width:225px;
@@ -121,7 +122,7 @@ header nav {
     max-width: 90%; /*--Center grid to page--*/
     margin: 30px; /*--Center grid to page--*/ 
     display: grid;
-    grid-template-columns: 200px repeat(3, 1fr);
+    grid-template-columns:  200px repeat(3, 1fr);
     grid-template-rows: minmax(100px, auto);
     gap: 5px;
   }
@@ -131,7 +132,7 @@ header nav {
     margin: 30px; /*--Center grid to page--*/ 
     display: grid;
     grid-template-columns: 200px repeat(6, 1fr);
-    grid-template-rows: 200px;
+    grid-template-rows: 75px;
     gap: 5px;
   }
 /*-----END GRID CONTAINER----------*/
@@ -165,18 +166,23 @@ header nav {
       
     }
   
+    
     .grid-item h3, p {
       background-color: #9ccacd;
       padding: 0px 5px 0 5px;
             
     }
+    
   
     .grid-item h3 {
+      background-color: #9ccacd;
       display: flex;
       justify-content: flex-start;
       align-items: flex-end;
-      height: 30px;
-      
+      font-size: 15px;      
+      height: 20px;
+      margin-top: 40px;
+    
     }
   
     .grid-item p {
@@ -197,7 +203,8 @@ header nav {
   
     .grid-contact-me a{
       color: #3e506d;
-      font-size: 1.5vh;
+      font-size: 2vh;
+      font-weight: bold;
       text-decoration: none;
       border-bottom: 2px solid #3e506d;
       margin-left: 10px;
@@ -288,50 +295,90 @@ header nav {
   }
 
 
-
   /*------END CSS GRID WORK ITEM------*/
 
-  /*------------------------*/
-  /*-----FOOTER-------------*/
+
+
+/*-------------------------------------*/
+/*---@MEDIA SCREEN LESS WIDTH 975PX-----*/
+
+@media screen and (max-width: 975px) {
+
+  .grid-container-contact-me {
+    grid-template-columns: 200px 100px;
+    grid-template-rows: 50px;
+  }
+
+  .box9 {
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+  .box12 {
+    grid-column-start: 1;
+    grid-column-start: 2;
+  }
+}
+
+/*-------------------------------------*/
+/*---@MEDIA SCREEN MAX WIDTH 768PX-----*/
+@media screen and (max-width: 768px) {
+  .grid-container-work {
+    grid-template-columns: 100px 200px;
+  }
 
   
-
-  /*
-  .footer-cta {
-    padding-right: 10px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start; 
-    flex-wrap: wrap;   
-    border-right: 3px solid #3e506d; 
-    width: 229px;  
-    text-align: right;
-    margin-bottom: 25px;
+  .box3 {
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+  .box5 {
+    grid-column-start: 1;
+    grid-column-start: 2;
   }
 
-  .footer-nav a {
-    color: #3e506d;
-    text-decoration: none;
-    border-bottom: 2px solid #3e506d;
-    font-size: 1.5vh;
-    font-weight: bold;
-    
+  .box9 {
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+  .box12 {
+    grid-column-start: 1;
+    grid-column-start: 2;
   }
 
+  .grid-container-about-me {
+    grid-template-columns: 100px 500px;    
 
-  .footer {
-    color: #9ccacd;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-    
   }
-  */
+  .grid-container-contact-me {
+    grid-template-columns: 100px 125px;
+    grid-template-rows: 125px;
+  }
 
+}
+
+/*-------------------------------------*/
+/*---@MEDIA SCREEN MAX WIDTH 680pX-----*/
+
+
+@media screen and (max-width: 680px) {
+  .grid-container-work {
+    grid-template-columns: 50px 100px;
+    grid-template-rows: repeat(3, 100px);
+  }
+
+  .grid-container-contact-me {
+    grid-template-columns: 50px 100px;
+    grid-template-rows: 100px;
+  }
+
+  .grid-head {
+    font-size: 12px;
+  }
+
+  .grid-container-about-me {
+    grid-template-columns: 50px 450px;
+  }
+
+ 
+}
   
-
-  /*-----END FOOTER---------*/
-
-
