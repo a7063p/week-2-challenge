@@ -1,7 +1,7 @@
 /*-------------------*/
 /*--TEMPLATE BASICS--*/
 
-.root {
+#root {
   --box-blue: #9ccacd;
   --text: #3e506d;
   --header: #2e3542;
@@ -36,19 +36,24 @@ header {
 
 header h1 {
     color:#2e3542;
-    font-size: 36px;
+    font-size: 30px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
     background-color: #9ccacd;
-    width: 250px;
+    width: 300px;
     padding-right: 10px;
+}
+header h1 a {
+  color: #3e506d;
+  text-decoration: none;
 }
 
 header nav {
     margin: 7px 0;
       }
+ 
 .main-nav {
     color: #9ccacd;
     display: flex;
@@ -94,8 +99,10 @@ header nav {
     height: 30px;
     margin: 0 15px 10px 0; 
   }
-  
+
   /*------------------------*/
+
+
   /*------CSS GRID WRAPPER----------*/
   .grid-wrapper {
     display: grid;
@@ -141,7 +148,7 @@ header nav {
   /*------CSS GRID ITEM----------*/
   .grid-item {
     padding-right: 0.5em;
-    /*opacity: 0.8;*/
+    
   }
     .grid-work {
     display: flex;
@@ -210,13 +217,7 @@ header nav {
       margin-left: 10px;
     }
 
-    .box4, .box5, .box6, .box7,.box8:hover {
-      opacity: 1 ;
-      transition: 0.5s;
-      cursor: pointer;
-            
-    }
-
+    
   .box1 {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -238,29 +239,31 @@ header nav {
     grid-row-start: 1;
     grid-row-end: 4;
     border-right: 3px solid #3e506d;
+    opacity: 0.8;
   }
 
   .box4 {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 3; 
     background-image: url("../images/run-buddy.JPG");    
     background-size: cover;
-    opacity: 0.9;
+    opacity: 0.8;   
    }
 
   .box5 {
     background-image: url("../images/led-wall.jpg");
     background-size: cover;
     background-position: center;
-    ;
-  } 
+    opacity: 0.8;
+   } 
 
   .box6 {
     background-image:url("../images/calculator.jpg");
     background-size: cover;
     background-position: top;
+    opacity: 0.8;
   }
 
   .box7{
@@ -271,6 +274,7 @@ header nav {
     background-image: url("../images/pastel.jpg");
     background-size: cover;
     background-position: top;
+    opacity: 0.8;
   }
 
   .box8 {
@@ -281,6 +285,7 @@ header nav {
     background-image: url("../images/surf-report.jpg");
     background-size: cover;
     background-position: center;
+    opacity: 0.8;
   }
 
   .box9 {
@@ -293,6 +298,11 @@ header nav {
     grid-column-start: 3;
     grid-column-end: 5;
   }
+
+  .grid-work:hover{
+    opacity: 1;
+  }
+
 
 
   /*------END CSS GRID WORK ITEM------*/
@@ -329,6 +339,9 @@ header nav {
 
 @media screen and (max-width: 900px) {
 
+  header h1 {
+    font-size: 30px;
+  }
   .grid-container-about-me{
     grid-template-columns: 100px auto;
   }
