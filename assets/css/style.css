@@ -55,7 +55,7 @@ header nav {
       }
  
 .main-nav {
-    color: #9ccacd;
+    color: var(--box-blue);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -65,13 +65,13 @@ header nav {
   }
 
  .main-nav li a{
-    color: #9ccacd; 
+    color: var(--box-blue); 
     padding: 5px;
     margin: 0 20px 0 20px; 
     font-weight: lighter;
     font-size: 1.55vw;
     text-decoration: none;
-    border-bottom: 2px solid #9ccacd;           
+    border-bottom: 2px solid var(--box-blue);           
   }
 
 
@@ -154,7 +154,7 @@ header nav {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    border: 3px solid #9ccacd;
+    border: 3px solid var(--box-blue);
     flex-wrap: wrap;
     }
 
@@ -205,16 +205,16 @@ header nav {
   
     .grid-item a {
       text-decoration: none;
-      color: #3e506d;
+      color: var(--text);
       
     }
   
     .grid-contact-me a{
-      color: #3e506d;
+      color: var(--text);
       font-size: 2vh;
       font-weight: bold;
       text-decoration: none;
-      border-bottom: 2px solid #3e506d;
+      border-bottom: 2px solid var(--text);
       margin-left: 10px;
     }
 
@@ -224,7 +224,7 @@ header nav {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    border-right: 3px solid#3e506d;
+    border-right: 3px solid #3e506d;
 }
 
   .box2 { 
