@@ -171,6 +171,7 @@ header nav {
       font-size: 20px;  
       text-align: right;
       
+      
     }
   
     
@@ -238,8 +239,7 @@ header nav {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 4;
-    border-right: 3px solid #3e506d;
-    opacity: 0.8;
+    border-right: 3px solid #3e506d;    
   }
 
   .box4 {
