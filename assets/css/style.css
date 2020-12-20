@@ -300,85 +300,96 @@ header nav {
 
 
 /*-------------------------------------*/
-/*---@MEDIA SCREEN LESS WIDTH 975PX-----*/
+/*---@MEDIA SCREEN LESS WIDTH 1013PX-----*/
 
-@media screen and (max-width: 975px) {
+@media screen and (max-width: 1140px) {
 
   .grid-container-contact-me {
-    grid-template-columns: 200px 100px;
-    grid-template-rows: 50px;
+    grid-template-columns: 200px 175px 175px 100px 100px 100px;
+    
   }
-
-  .box9 {
-    grid-row-start: 1;
-    grid-row-end: 4;
-  }
-  .box12 {
-    grid-column-start: 1;
-    grid-column-start: 2;
-  }
+.box9{
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+ .box12 {
+   grid-column: 5;
+ }
+ .box14{
+   grid-column: 2;
+ }
 }
 
-/*-------------------------------------*/
-/*---@MEDIA SCREEN MAX WIDTH 768PX-----*/
-@media screen and (max-width: 768px) {
-  .grid-container-work {
-    grid-template-columns: 100px 200px;
-  }
+/*--------END 1013px---------------------*/
 
-  
+
+/*-------------------------------------*/
+/*---@MEDIA SCREEN MAX WIDTH 900pX-----*/
+
+
+@media screen and (max-width: 900px) {
+
+  .grid-container-about-me{
+    grid-template-columns: 100px auto;
+  }
+  .grid-container-work {
+    grid-template-columns: 100px 400px;
+    grid-template-rows: repeat(5, 100px);
+  }
+  .grid-container-contact-me {
+    grid-template-columns: 100px 200px;
+  } 
   .box3 {
     grid-row-start: 1;
-    grid-row-end: 5;
+    grid-row-end: 6;
+  }
+
+  .box4 {
+    grid-row: 1;  
+    grid-column-start: 2;
+    grid-column-end: 5;
   }
   .box5 {
-    grid-column-start: 1;
+    grid-row: 2;
     grid-column-start: 2;
-  }
+    grid-column-end: 5;
+}
+
+  .box6 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+  .box7 {
+    grid-row: 4;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+  .box8 {
+    grid-row: 5;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
 
   .box9 {
     grid-row-start: 1;
     grid-row-end: 4;
   }
   .box12 {
-    grid-column-start: 1;
-    grid-column-start: 2;
+   grid-column: 2;
   }
-
-  .grid-container-about-me {
-    grid-template-columns: 100px 500px;    
-
-  }
-  .grid-container-contact-me {
-    grid-template-columns: 100px 125px;
-    grid-template-rows: 125px;
-  }
-
-}
-
-/*-------------------------------------*/
-/*---@MEDIA SCREEN MAX WIDTH 680pX-----*/
-
-
-@media screen and (max-width: 680px) {
-  .grid-container-work {
-    grid-template-columns: 50px 100px;
-    grid-template-rows: repeat(3, 100px);
-  }
-
-  .grid-container-contact-me {
-    grid-template-columns: 50px 100px;
-    grid-template-rows: 100px;
-  }
-
-  .grid-head {
-    font-size: 12px;
-  }
-
-  .grid-container-about-me {
-    grid-template-columns: 50px 450px;
-  }
-
- 
-}
   
+  .box13{
+    grid-column: 3;
+  }
+
+  .box14{
+    grid-column: 4;
+  }
+
+}
+
+/*--------------------------------------------*/
+
+
+
