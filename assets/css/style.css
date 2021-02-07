@@ -232,7 +232,7 @@ header nav {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3; 
-    background-image: url("../images/run-buddy.JPG");    
+    background-image: url("../images/sayings\ from\ someone.PNG");    
     background-size: cover;
     opacity: 0.8;   
    }
@@ -256,7 +256,7 @@ header nav {
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
-    background-image: url("../images/pastel.jpg");
+    background-image: url("../images/run-buddy.JPG");
     background-size: cover;
     background-position: top;
     opacity: 0.8;
